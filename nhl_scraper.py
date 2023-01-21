@@ -1,6 +1,3 @@
-"""
-use cutoff row number to create xpath for all rows.
-"""
 import pprint
 from time import time
 from time import sleep
