@@ -9,7 +9,9 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-client = MongoClient()
+client = MongoClient('localhost', 27017)
+schedule_db = client['schedule']
+record = schedule_db['record']
 
 options = Options()
 options.add_argument("--no-sandbox")
